@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: SP liqubase POC
+  datasource:
+    url: jdbc:mysql://localhost:3306/sp_liquibase_poc?createDatabaseIfNotExist=true&useLegacyDatetimeCode=false&autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  liquibase:
+    enabled: true
+    change-log: classpath:/db/changelog/db.changelog-root.xml
+
